@@ -35,9 +35,9 @@ function changeColor(){
 * on mouse click. For best practice use addEventListener.
 *
 */
-const thebutton = document.getElementById("convertbtn");
-const finput = document.getElementById("f-input");
-thebutton.addEventListener("click",convertTemp);
+const theButton = document.getElementById("convertbtn");
+const FTin = document.getElementById("f-input");
+theButton.addEventListener("click",convertTemp);
 
 /*
 * Then write a function that calculates Fahrenheit to Celsius and display it on the webpage
@@ -46,10 +46,10 @@ thebutton.addEventListener("click",convertTemp);
 
 function convertTemp(){
     //Calculate the temperature here
-    const Ftemp = finput.value;
-    const Ctemp = Math.round((Ftemp - 32 )/9*5)
+    const FT = FTin.value;
+    const CT = Math.round((FT - 32 )/9*5)
     //Send the calculated temperature to HTML
-    document.getElementById("c-output").innerHTML=Ctemp
+    document.getElementById("c-output").innerHTML=CT
 }
 
 
